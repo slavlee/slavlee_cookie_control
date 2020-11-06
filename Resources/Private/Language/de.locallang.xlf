@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-09-25T18:48:49Z" product-name="slavlee_cookie_control">
+		<header/>
+		<body>
+			<trans-unit id="slavlee_cookie_control.alert.title">
+				<target>Cookies</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.text.I.0">
+				<target><![CDATA[Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. <br /> Weitere Informationen zu Cookies erhalten Sie in unserer <a href="%s" target="_blank" class="alert-link">Datenschutzerklärung</a>.]]></target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.text.I.1">
+				<target>Manche Cookies sind für diese Webseite essentiell und manche Teile der Webseite können beim Deaktivieren beeinträchtigt werden. Wir nutzen ebenfalls nicht essentielle Cookie um anonym das Besucherverhalten aufzuzeichnen (Tracking), zu analysieren und auszuwerten.</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.form.agree">
+				<target>Ausgewählte Cookies aktzeptieren</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.form.deny">
+				<target>Alle Cookies deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.form.moreinfo">
+				<target>Weitere Informationen</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.moreinfo.modalbox.close">
+				<target>Schließen</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.settings">
+				<target>Cookie Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.gotit">
+				<target>Verstanden!</target>
+			</trans-unit>
+			<trans-unit id="category.title">
+				<target>Cookies Einstellungen:</target>
+			</trans-unit>
+			<trans-unit id="category.necessary.label">
+				<target>Benötigte</target>
+			</trans-unit>
+			<trans-unit id="category.functional.label">
+				<target>Funktionale</target>
+			</trans-unit>
+			<trans-unit id="category.partiallyChecked">
+				<target>(teilweise aktzeptiert)</target>
+			</trans-unit>
+			<trans-unit id="cookies.phpsessid">
+				<target>Speichert die PHP Session-ID.</target>
+			</trans-unit>
+			<trans-unit id="cookies.be_lastLoginProvider">
+				<target>Speichert den letzten Loginprovider für das Backend.</target>
+			</trans-unit>
+			<trans-unit id="cookies.be_typo_user">
+				<target>Identifiziert den Backendbenutzer nach dem Login und speichert seine Präferenzen.</target>
+			</trans-unit>
+			<trans-unit id="cookies.fe_typo_user">
+				<target>Identifiziert den Frontendbenutzer nach dem Login und speichert seine Präferenzen.</target>
+			</trans-unit>
+			<trans-unit id="cookies._ga">
+				<target>Wird benötigt um Benutzer voneinander zu unterscheiden.</target>
+			</trans-unit>
+			<trans-unit id="cookies._gat">
+				<target>Wird benutzt um die Requestrate zu drosseln. Falls Google Analytics über den Google Tag Manager eingerichtet ist, wird dieses Cookie als _dc_gtm_<![CDATA[<property-id>]]> benannt.</target>
+			</trans-unit>
+			<trans-unit id="cookies._gid">
+				<target>Wird benötigt um Benutzer voneinander zu unterscheiden.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utma">
+				<target>Wird benötigt um Benutzer und Sessions voneinander zu unterscheiden. Dieses Cookie wird erstellt, wenn JavaScript ausgeführt wird und kein Cookie mit dem Namen __utma existiert. Dieses Cookie wird immer dann aktualisiert, wenn Daten an Google Analytics geschickt wird.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmt">
+				<target>Wird benutzt um die Requestrate zu drosseln.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmb">
+				<target>Wird benutzt um neue Sessions/Besuche zu erkennen. Dieses Cookie wird erstellt, wenn JavaScript ausgeführt wird und kein Cookie mit dem Namen __utmb existiert. Dieses Cookie wird immer dann aktualisiert, wenn Daten an Google Analytics geschickt wird.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmc">
+				<target>Wird nicht in ga.js genutzt. Wird gesetzt um kompatibel mit urchin.js zu sein. Dieses Cookie ist historisch bedingt und wurde genutzt um mit dem Cookie: __utmb neue Sessions/Besuche festzustellen.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmz">
+				<target>Speichert den Zieltraffic oder Kampagne, welche aussagt, wie der Benutzer die Seite erreicht hat. Dieses Cookie wird immer dann aktualisiert, wenn Daten an Google Analytics geschickt wird.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmv">
+				<target>Wird zur Speicherung der "visitor-level custom variable" - Daten benötigt. Dieses Cookie wird erstellt, wenn der Entwickler die Funktion: _setCustomVar benutzt mit der ""visitor level custom variable benutzt. Dieses Cookie wurde auch für die veraltetet Funktion: _setVar genutzt. Dieses Cookie wird immer dann aktualisiert, wenn Daten an Google Analytics geschickt wird.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmx">
+				<target>Wird benutzt für die Einbeziehung des Benutzers in einem Expirement.</target>
+			</trans-unit>
+			<trans-unit id="cookies.__utmxx">
+				<target>Wird benutzt um das Ende eines Experiments festzustellen, in dem der Benutzer sich befindet.</target>
+			</trans-unit>
+			<trans-unit id="cookies._gaexp">
+				<target>Wird benutzt für die Einbeziehung eines Benutzers in einem Experiment und dessen Dauer in diesem Expirement festzustellen.</target>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awcid">
+				<target>Wird benutzt für Kampagnen die an der Google Ads Customer IDs gebunden ist.</target>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awmid">
+				<target>Wird benutzt für Kampagnen die an der Google Ads Customer IDs gebunden ist.</target>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awgid">
+				<target>Wird benutzt für Kampagnen die an der Google Ads Ad Group IDs gebunden ist.</target>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awkid">
+				<target>Wird benutzt für Kampagnen die an der Google Ads Criterion IDs gebunden ist.</target>
+			</trans-unit>
+			<trans-unit id="cookies._opt_utmc">
+				<target>Speichert den letzten utm_campaign Queryparameter.</target>
+			</trans-unit>
+			<trans-unit id="cookies.test_cookie">
+				<target>Wird benutzt um zu prüfen, ob der Browser Cookies aktzeptiert.</target>
+			</trans-unit>
+			<trans-unit id="cookies.IDE">
+				<target>Beinhaltet eine zufallsgenerierte Benutzer-ID. Über diese ID kann Google den Benutzer über verschiedene Domains hinweg wiedererkennen, um ihn personalisierte Werbung anzuzeigen.</target>
+			</trans-unit>
+			<trans-unit id="cookies._gcl_au">
+				<target>Enthält eine zufallsgenerierte User-ID.</target>
+			</trans-unit>
+			<trans-unit id="cookies._gcl_aw">
+				<target>Dieses Cookie wird gesetzt, wenn der Benutzer auf eine Google ad klickt. Es beinhaltet Informationen darüber welche Ad geklickt wurde, so dass erzielte Erfolge, wie Bestellungen oder Kontaktaufnahmen der Werbeanzeige zugeordnet werden kann.</target>
+			</trans-unit>
+			<trans-unit id="cookies.player">
+				<target>Dieses Cookie speichert Einstellungen bevor man ein integriertes Video abspielt. Dadurch erhält man vordefinierte Einstellungen für alle kommenden Vimeo Videos.</target>
+			</trans-unit>
+			<trans-unit id="cookies.vuid">
+				<target>Dieses Cookie sammelt Informationen über Webseitenaktionen die ein integriertes Vimeo Video haben.</target>
+			</trans-unit>
+			<trans-unit id="cookies._abexps">
+				<target>Dieses Vimeo Cookie hilft Vimeo die Einstellungen, die Sie gemacht haben, zu merken. Das kann zum Beispiel: Sprache, Region oder Benutzername sein. Ganz allgemein ausgedrückt, speichert dieses Cookie Daten darüber, wie Sie Vimeo benutzen.</target>
+			</trans-unit>
+			<trans-unit id="cookies.continuous_play_v3">
+				<target>Dieses Cookie ist ein Cookie von einem Drittanbieter von Vimeo. Dieses Cookie sammelt Informationen darüber, wie Sie den Vimeo Dienst benutzen. Zum Beispiel speichert das Cookie wann Sie ein Video pausieren und wieder abspielen.</target>
+			</trans-unit>
+			<trans-unit id="cookies._fbp">
+				<target>Das ist ein Facebook Cookie. Dieses Cookie wird benutzt um Werbung oder Produktplatzierungen anzuzeigen von Facebook oder anderen Werbetreibenden anzuzeigen.</target>
+			</trans-unit>
+			<trans-unit id="moreinfo.services">
+				<target>Dienste</target>
+			</trans-unit>
+			<trans-unit id="moreinfo.cookies">
+				<target>Cookies</target>
+			</trans-unit>
+			<trans-unit id="moreinfo.cookies.settings.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="cookie.type">
+				<target>Typ</target>
+			</trans-unit>
+			<trans-unit id="cookie.type.permanent">
+				<target>Dauerhaft</target>
+			</trans-unit>
+			<trans-unit id="cookie.expiration">
+				<target>Gültigkeitsdauer</target>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.endofbrowser">
+				<target>Bis der Browser geschlossen wird.</target>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.years">
+				<target>%s Jahre</target>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.hours">
+				<target>%s Stunden</target>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.minutes">
+				<target>%s Minuten</target>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.months">
+				<target>%s Monate</target>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.days">
+				<target>%s Tage</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,8 @@
+<f:if condition="{settings.enable}">
+	<!-- SCC_KEEP - START -->
+	<div class="scc{f:if(condition: minify, then: ' scc--minify')} scc-position--{settings.position}">
+		<f:render section="CookieConsent" />		
+	</div>	
+	<f:render section="MoreInfo" />
+	<!-- SCC_KEEP - END -->
+</f:if>

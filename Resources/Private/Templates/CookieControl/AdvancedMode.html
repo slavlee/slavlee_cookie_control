@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:cc="http://typo3.org/ns/Slavlee/SlavleeCookieControl/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+	<f:layout name="Default" />
+	<f:section name="CookieConsent">
+		<f:flashMessages />	
+		<button id="scc-cookiesettings" type="button" class="btn btn-info{f:if(condition: minify, else: ' d-none')}"><f:translate key="slavlee_cookie_control.alert.settings" /></button>
+		<div class="alert alert-warning{f:if(condition: minify, then: ' d-none')}" role="alert">
+			<h4 class="alert-heading"><f:translate key="slavlee_cookie_control.alert.title" /></h4>
+			<p>
+				<f:format.raw><f:translate key="slavlee_cookie_control.alert.text.I.0" arguments="{privacyLink: '{f:uri.page(pageUid: settings.privacyPage)}'}" /></f:format.raw>
+			</p>
+			<f:if condition="{settings.showTrackingInfo}">
+				<p>
+					<f:translate key="slavlee_cookie_control.alert.text.I.1" />
+				</p>	
+			</f:if>
+			<f:render partial="CookieControl/Form/Advanced" arguments="{categories: settings.categories, services: settings.services}" />			
+		</div>
+	</f:section>
+	<f:section name="MoreInfo">
+		<div id="scc-moreinfo" class="scc-moreinfo modal fade" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel"><f:translate key="slavlee_cookie_control.moreinfo.modalbox.title" /></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="{f:translate(key: 'slavlee_cookie_control.moreinfo.modalbox.close')}">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+			      	</div>
+			      <div class="modal-body">
+			      	<f:form action="singleCookiesForm" method="post">
+			      		<cc:widget.singleCookiesForm.categories categories="{settings.categories}" services="{settings.services}" cookies="{settings.cookies}" />
+			      	</f:form>
+			      </div>
+			      <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal"><f:translate key="slavlee_cookie_control.moreinfo.modalbox.close" /></button>
+			      </div>
+				</div>	
+			</div>
+		</div>
+	</f:section>
+</html>

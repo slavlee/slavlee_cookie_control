@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:slavlee_cookie_control/Resources/Private/Language/locallang" date="2020-10-29T20:02:26Z" product-name="slavlee_cookie_control">
+		<header/>
+		<body>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_category" resname="tx_slavleecookiecontrol_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_category.mandatory" resname="tx_slavleecookiecontrol_domain_model_category.mandatory">
+				<source>Mandatory</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_category.name" resname="tx_slavleecookiecontrol_domain_model_category.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_category.services" resname="tx_slavleecookiecontrol_domain_model_category.services">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_cookie" resname="tx_slavleecookiecontrol_domain_model_cookie">
+				<source>Cookie</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_cookie.name" resname="tx_slavleecookiecontrol_domain_model_cookie.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_cookie.description" resname="tx_slavleecookiecontrol_domain_model_cookie.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_cookie.type" resname="tx_slavleecookiecontrol_domain_model_cookie.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_cookie.expiration_type" resname="tx_slavleecookiecontrol_domain_model_cookie.expiration_type">
+				<source>Expiration Type</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_cookie.expiration_value" resname="tx_slavleecookiecontrol_domain_model_cookie.expiration_value">
+				<source>Expiration Value</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_service" resname="tx_slavleecookiecontrol_domain_model_service">
+				<source>Service</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_service.name" resname="tx_slavleecookiecontrol_domain_model_service.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_service.description" resname="tx_slavleecookiecontrol_domain_model_service.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_service.urls" resname="tx_slavleecookiecontrol_domain_model_service.urls">
+				<source>Urls</source>
+			</trans-unit>
+			<trans-unit id="tx_slavleecookiecontrol_domain_model_service.cookies" resname="tx_slavleecookiecontrol_domain_model_service.cookies">
+				<source>Cookies</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.title">
+				<source>Cookies</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.text.I.0">
+				<source><![CDATA[This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our <a href="%s" target="_blank" class="alert-link">Cookie Policy</a>.]]></source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.text.I.1">
+				<source>Some cookies on this site are essential, and the site won't work as expected without them. These cookies are set when you submit a form, login or interact with the site by doing something that goes beyond clicking on simple links. We also use some non-essential cookies to anonymously track visitors or enhance your experience of the site. If you're not happy with this, we won't set these cookies but some nice features of the site may be unavailable.</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.form.agree">
+				<source>Accept selected cookies</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.form.deny">
+				<source>Disable all cookies</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.form.moreinfo">
+				<source>More Info</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.moreinfo.modalbox.title">
+				<source>Cookies Consent</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.moreinfo.modalbox.close">
+				<source>Close</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.settings">
+				<source>Cookie settings</source>
+			</trans-unit>
+			<trans-unit id="slavlee_cookie_control.alert.gotit">
+				<source>Got it!</source>
+			</trans-unit>
+			<trans-unit id="category.title">
+				<source>Cookies settings:</source>
+			</trans-unit>
+			<trans-unit id="category.necessary.label">
+				<source>Necessary</source>
+			</trans-unit>
+			<trans-unit id="category.functional.label">
+				<source>Functional</source>
+			</trans-unit>
+			<trans-unit id="category.statistics.label">
+				<source>Statistics</source>
+			</trans-unit>
+			<trans-unit id="category.marketing.label">
+				<source>Marketing</source>
+			</trans-unit>
+			<trans-unit id="category.tracking.label">
+				<source>Tracking</source>
+			</trans-unit>
+			<trans-unit id="category.partiallyChecked">
+				<source>(partially accepted)</source>
+			</trans-unit>
+			<trans-unit id="cookies.phpsessid">
+				<source>Saves the php session id.</source>
+			</trans-unit>
+			<trans-unit id="cookies.be_lastLoginProvider">
+				<source>Saves the last login provider used for the backend login.</source>
+			</trans-unit>
+			<trans-unit id="cookies.be_typo_user">
+				<source>Identifies the backend user after login and saves his preferences.</source>
+			</trans-unit>
+			<trans-unit id="cookies.fe_typo_user">
+				<source>Identifies the frontend user after login and saves his preferences.</source>
+			</trans-unit>
+			<trans-unit id="cookies._ga">
+				<source>Used to distinguish users.</source>
+			</trans-unit>
+			<trans-unit id="cookies._gat">
+				<source>Used to throttle request rate. If Google Analytics is deployed via Google Tag Manager, this cookie will be named _dc_gtm_<![CDATA[<property-id>]]>.</source>
+			</trans-unit>
+			<trans-unit id="cookies._gid">
+				<source>Used to distinguish users.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utma">
+				<source>Used to distinguish users and sessions. The cookie is created when the javascript library executes and no existing __utma cookies exists. The cookie is updated every time data is sent to Google Analytics.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utmt">
+				<source>Used to throttle request rate.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utmb">
+				<source>Used to determine new sessions/visits. The cookie is created when the javascript library executes and no existing __utmb cookies exists. The cookie is updated every time data is sent to Google Analytics.</source>
+			</trans-unit>
+				<trans-unit id="cookies.__utmc">
+				<source>Not used in ga.js. Set for interoperability with urchin.js. Historically, this cookie operated in conjunction with the __utmb cookie to determine whether the user was in a new session/visit.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utmz">
+				<source>Stores the traffic source or campaign that explains how the user reached your site. The cookie is created when the javascript library executes and is updated every time data is sent to Google Analytics.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utmv">
+				<source>Used to store visitor-level custom variable data. This cookie is created when a developer uses the _setCustomVar method with a visitor level custom variable. This cookie was also used for the deprecated _setVar method. The cookie is updated every time data is sent to Google Analytics.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utmx">
+				<source>Used to determine a user's inclusion in an experiment.</source>
+			</trans-unit>
+			<trans-unit id="cookies.__utmxx">
+				<source>Used to determine the expiry of experiments a user has been included in.</source>
+			</trans-unit>
+			<trans-unit id="cookies._gaexp">
+				<source>Used to determine a user's inclusion in an experiment and the expiry of experiments a user has been included in.</source>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awcid">
+				<source>Used for campaigns mapped to Google Ads Customer IDs.</source>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awmid">
+				<source>Used for campaigns mapped to Google Ads Customer IDs.</source>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awgid">
+				<source>Used for campaigns mapped to Google Ads Ad Group IDs</source>
+			</trans-unit>
+			<trans-unit id="cookies._opt_awkid">
+				<source>Used for campaigns mapped to Google Ads Criterion IDs</source>
+			</trans-unit>
+			<trans-unit id="cookies._opt_utmc">
+				<source>Stores the last utm_campaign query parameter.</source>
+			</trans-unit>
+			<trans-unit id="cookies.test_cookie">
+				<source>Used to check if the user's browser supports cookies.</source>
+			</trans-unit>
+			<trans-unit id="cookies.IDE">
+				<source>Contains a randomly generated user ID. Using this ID, Google can recognize the user across different domains across different websites and display personalized advertising.</source>
+			</trans-unit>
+			<trans-unit id="cookies._gcl_au">
+				<source>Enthält eine zufallsgenerierte User-ID.</source>
+			</trans-unit>
+			<trans-unit id="cookies._gcl_aw">
+				<source>This cookie is set when a user clicks on a Google ad on the website. It contains information about which ad was clicked, so that achieved successes such as Orders or contact requests can be assigned to the advertisement.</source>
+			</trans-unit>
+			<trans-unit id="cookies.player">
+				<source>This cookie saves your settings before you play an embedded Vimeo video. This will give you your preferred settings the next time you watch a Vimeo video.</source>
+			</trans-unit>
+			<trans-unit id="cookies.vuid">
+				<source>This cookie collects information about your actions on websites that have embedded a Vimeo video.</source>
+			</trans-unit>
+			<trans-unit id="cookies._abexps">
+				<source>This Vimeo cookie helps Vimeo to remember the settings you have made. This can be, for example, a preset language, a region or a user name. In general, the cookie stores data about how you use Vimeo.</source>
+			</trans-unit>
+			<trans-unit id="cookies.continuous_play_v3">
+				<source>This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause or play a video again.</source>
+			</trans-unit>
+			<trans-unit id="cookies._fbp">
+				<source>This is a Facebook cookie. This cookie is used to show advertisements or advertising products from Facebook or other advertisers.</source>
+			</trans-unit>
+			<trans-unit id="moreinfo.services">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="moreinfo.cookies">
+				<source>Cookies</source>
+			</trans-unit>
+			<trans-unit id="moreinfo.urls">
+				<source>URLs</source>
+			</trans-unit>
+			<trans-unit id="moreinfo.cookies.settings.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="cookie.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="cookie.type.session">
+				<source>Session</source>
+			</trans-unit>
+			<trans-unit id="cookie.type.permanent">
+				<source>Permanent</source>
+			</trans-unit>
+			<trans-unit id="cookie.expiration">
+				<source>Expiration</source>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.endofbrowser">
+				<source>After browser is closed</source>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.years">
+				<source>%s years</source>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.hours">
+				<source>%s hours</source>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.minutes">
+				<source>%s mins</source>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.months">
+				<source>%s months</source>
+			</trans-unit>
+			<trans-unit id="cookies.session.expiration.days">
+				<source>%s days</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

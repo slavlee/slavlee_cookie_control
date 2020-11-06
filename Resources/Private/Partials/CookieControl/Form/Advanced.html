@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:cc="http://typo3.org/ns/Slavlee/SlavleeCookieControl/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+	<f:form action="form" method="post">
+		<cc:widget.form.categories categories="{categories}" services="{services}" hide="{settings.mode.advanced.hideCategories}" />
+		<fieldset class="btn-group">		
+			<div class="hide">
+				<f:form.hidden name="mode" value="advanced" />
+			</div>
+			<div class="form-group">
+				<f:form.submit class="btn btn-success" value="{f:translate(key:'slavlee_cookie_control.form.agree')}" name="decision" />
+				<f:form.submit class="btn btn-danger" value="{f:translate(key:'slavlee_cookie_control.form.deny')}" name="decision" />
+				<a id="scc-modal" href="javascript:void(0);" class="btn btn-info" data-toggle="modal" data-target="#scc-moreinfo"><f:translate key="slavlee_cookie_control.form.moreinfo" /></a>
+			</div>
+		</fieldset>
+	</f:form>
+</html>

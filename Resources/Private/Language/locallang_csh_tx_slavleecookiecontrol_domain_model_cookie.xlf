@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:slavlee_cookie_control/Resources/Private/Language/locallang_csh" date="2020-10-29T20:02:26Z" product-name="slavlee_cookie_control">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="description.description" resname="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="type.description" resname="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="expiration_type.description" resname="expiration_type.description">
+				<source>expirationType</source>
+			</trans-unit>
+			<trans-unit id="expiration_value.description" resname="expiration_value.description">
+				<source>expirationValue</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
