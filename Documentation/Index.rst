@@ -13,16 +13,16 @@ Extension Name
 =============================================================
 
 :Version:
-   |release|
+   |1.0.0|
 
 :Language:
    en
 
 :Authors:
-   Your name
+   Kevin Chileong Lee
 
 :Email:
-   you@domain.tld
+   support@slavlee.de
 
 :License:
    This extension documentation is published under the
