@@ -1,0 +1,28 @@
+{
+	"name" : "slavlee/slavlee-cookie-control",
+	"type" : "typo3-cms-extension",
+	"description" : "This extensions shows an alert message, where users can accept to use cookies. If they are disagree, then all cookies will be deleted.\nThis cookie gives you the opportunity to comply to the latest European Privacy Protection Law.",
+	"authors" : [{
+			"name" : "Kevin Chileong Lee",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"typo3/cms-core" : "^8.7.1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Slavlee\\SlavleeCookieControl\\" : "Classes"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Slavlee\\SlavleeCookieControl\\Tests\\" : "Tests"
+		}
+	},
+	"replace" : {
+		"slavlee_cookie_control" : "self.version",
+		"typo3-ter/cookie-control" : "self.version"
+	},
+	"homepage" : "https://typo3-cookie-consent.slavlee.de/"
+}
