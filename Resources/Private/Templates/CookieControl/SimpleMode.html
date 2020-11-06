@@ -1,0 +1,19 @@
+<f:layout name="Default" />
+<f:section name="CookieConsent">
+	<f:flashMessages />	
+	<f:if condition="{minify}">
+		<f:else>
+			<div class="alert alert-warning{f:if(condition: minify, then: ' hide')}" role="alert">
+				<h4 class="alert-heading"><f:translate key="slavlee_cookie_control.alert.title" /></h4>
+				<p>
+					<f:format.raw><f:translate key="slavlee_cookie_control.alert.text.I.0" arguments="{privacyLink: '{f:uri.page(pageUid: settings.privacyPage)}'}" /></f:format.raw>
+				</p>
+				<f:render partial="CookieControl/Form/Simple" />				
+			</div>
+		</f:else>
+	</f:if>
+</f:section>
+
+<f:section name="MoreInfo">
+	
+</f:section>

@@ -1,0 +1,113 @@
+<f:if condition="{categories}">
+	<fieldset class="scc-widget--catsettings{f:if(condition:'{hide}',then:' d-none')}">
+		<f:if condition="{hide}">
+			<f:else>
+				<legend class="scc-widget--catsettings-title"><f:translate key="category.title" /></legend>
+			</f:else>
+		</f:if>
+		<f:switch expression="{source}">
+			<f:case value="database">
+				<f:render section="DatabaseSource" arguments="{_all}" />
+			</f:case>
+			<f:defaultCase>
+				<f:render section="DefaultSource" arguments="{_all}" />
+			</f:defaultCase>
+		</f:switch>		
+	</fieldset>
+</f:if>
+
+<f:section name="DefaultSource">
+	<f:for each="{categories}" as="categorySettings" key="categorySettingsKey">
+		<div class="form-group">
+			<f:if condition="{categorySettings.checked}">
+				<f:then>
+					<f:if condition="{categorySettings.mandatory}">
+						<f:then>
+							<f:form.hidden name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="1" />
+							<f:if condition="{hide}">
+								<f:else>
+									<f:form.checkbox id="cscc-widget-categorysettingskey_{categorySettingsKey}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" class="checkbox" checked="checked" additionalAttributes="{disabled: 'disabled'}" />
+								</f:else>
+							</f:if>
+						</f:then>
+						<f:else>
+							<f:if condition="{hide}">
+								<f:then>
+									<f:form.hidden name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" />
+								</f:then>
+								<f:else>
+									<f:form.checkbox id="cscc-widget-categorysettingskey_{categorySettingsKey}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" class="checkbox" checked="checked" />
+								</f:else>
+							</f:if>								
+						</f:else>
+					</f:if>						
+				</f:then>
+				<f:else>
+					<f:if condition="{hide}">
+						<f:else>
+							<f:form.checkbox id="scc-widget-categorysettingskey_{categorySettingsKey}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" class="checkbox" />
+						</f:else>
+					</f:if>						
+				</f:else>
+			</f:if>			
+			<f:if condition="{hide}">
+				<f:else>		
+					<label for="scc-widget-categorysettingskey_{categorySettingsKey}" class="text-primary">
+						<f:translate key="{categorySettings.label}" default="{categorySettings.label}" />
+						<f:if condition="{categorySettings.hasCheckedServices}">
+							<f:translate key="category.partiallyChecked" />
+						</f:if>
+					</label>
+				</f:else>
+			</f:if>
+		</div>
+	</f:for>
+</f:section>
+
+<f:section name="DatabaseSource">
+	<f:for each="{categories}" as="category">
+		<div class="form-group">
+			<f:if condition="{category.checked}">
+				<f:then>
+					<f:if condition="{category.mandatory}">
+						<f:then>
+							<f:form.hidden name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="1" />
+							<f:if condition="{hide}">
+								<f:else>
+									<f:form.checkbox id="cscc-widget-categorysettingskey_{category.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[{category.model.uid}]tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" class="checkbox" checked="checked" additionalAttributes="{disabled: 'disabled'}" />
+								</f:else>
+							</f:if>
+						</f:then>
+						<f:else>
+							<f:if condition="{hide}">
+								<f:then>
+									<f:form.hidden name="tx_slavleecookiecontrol_slavleecookiecontrol[{category.model.uid}]tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" />
+								</f:then>
+								<f:else>
+									<f:form.checkbox id="cscc-widget-categorysettingskey_{category.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" class="checkbox" checked="checked" />
+								</f:else>
+							</f:if>								
+						</f:else>
+					</f:if>						
+				</f:then>
+				<f:else>
+					<f:if condition="{hide}">
+						<f:else>
+							<f:form.checkbox id="scc-widget-categorysettingskey_{category.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" class="checkbox" />
+						</f:else>
+					</f:if>						
+				</f:else>
+			</f:if>			
+			<f:if condition="{hide}">
+				<f:else>		
+					<label for="scc-widget-categorysettingskey_{category.model.uid}" class="text-primary">
+						{category.model.name}
+						<f:if condition="{category.hasCheckedServices} && !{category.checked}">
+							<f:translate key="category.partiallyChecked" />
+						</f:if>
+					</label>
+				</f:else>
+			</f:if>
+		</div>
+	</f:for>
+</f:section>

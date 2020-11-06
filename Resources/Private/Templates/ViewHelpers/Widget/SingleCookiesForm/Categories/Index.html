@@ -1,0 +1,178 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:cc="http://typo3.org/ns/Slavlee/SlavleeCookieControl/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+	<f:if condition="{categories}">
+		<fieldset class="scc-widget--catsettings">
+			<f:switch expression="{source}">
+				<f:case value="database">
+					<f:render section="DatabaseSource" arguments="{_all}" />
+				</f:case>
+				<f:defaultCase>
+					<f:render section="DefaultSource" arguments="{_all}" />
+				</f:defaultCase>
+			</f:switch>
+			
+		</fieldset>
+	</f:if>
+	
+	<f:section name="DefaultSource">
+		<f:for each="{categories}" as="categorySettings" key="categorySettingsKey">
+			<div class="form-group">
+				<div class="scc-widget--categorysettings-header">			
+					<h3>	
+						<label for="scc-widget--categorysettingskey_{categorySettingsKey}"><f:translate key="{categorySettings.label}" default="{categorySettings.label}" /></label>
+						<f:if condition="{categorySettings.mandatory}">
+							<f:then>
+								<f:form.hidden name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" />
+								<f:form.checkbox id="scc-widget--categorysettingskey_{categorySettingsKey}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" class="checkbox" checked="checked" additionalAttributes="{disabled: 'disabled'}" />
+							</f:then>
+							<f:else>
+								<f:if condition="{categorySettings.checked}">
+									<f:then>
+										<f:form.checkbox id="scc-widget--categorysettingskey_{categorySettingsKey}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" class="checkbox" checked="checked" />
+									</f:then>
+									<f:else>
+										<f:form.checkbox id="scc-widget--categorysettingskey_{categorySettingsKey}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{categorySettingsKey}" class="checkbox" />
+									</f:else>
+								</f:if>
+							</f:else>
+						</f:if>														
+					</h3>
+				</div>			
+				<div class="scc-widget--categorysettings-content">
+					<f:if condition="{categorySettings.services -> f:count()} > 0">
+						<h4><f:translate key="moreinfo.services" /></h4>
+						<ul class="scc-list scc-list-services list-group list-group-flush">
+							<f:for each="{categorySettings.services}" as="service">
+								<li class="list-group-item">
+									<h5>
+										{service.name}
+										<f:if condition="{service.checked}">
+											<f:then>
+												<f:form.checkbox id="scc-widget--categorysettingskey_{categorySettingsKey}_{service.id}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categoryServiceSettingsKey][]" value="{service.id}" class="checkbox" checked="checked" />
+											</f:then>
+											<f:else>
+												<f:form.checkbox id="scc-widget--categorysettingskey_{categorySettingsKey}_{service.id}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categoryServiceSettingsKey][]" value="{service.id}" class="checkbox" />
+											</f:else>
+										</f:if>
+									</h5>
+									<f:if condition="{service.cookies -> f:count()} > 0">
+										<div class="scc-list-settings scc-list-service-cookies">
+											<h6><f:translate key="moreinfo.cookies" /></h6>
+											<f:for each="{service.cookies}" as="cookieData" key="name" iteration="iterator">
+												<p class="mb-0{f:if(condition:'{iterator.index} > 0',then:' mt-1')}"><strong><f:translate key="moreinfo.cookies.settings.{name}" default="{name}" /></strong></p>
+												<ul class="scc-cookie-settings">
+													<li class="scc-cookie-type"><span class="scc-label"><f:translate key="cookie.type" />:</span> <f:translate key="cookie.type.{cookieData.type}" default="{cookieData.type}" /></li>
+													<f:if condition="{cookieData.expiration}">
+														<li class="scc-cookie-expiration">
+															<span class="scc-label"><f:translate key="cookie.expiration" />:</span> <f:translate key="cookies.session.expiration.{cookieData.expiration.type}" arguments="{0: '{cookieData.expiration.value}'}"/>
+														</li>
+													</f:if>
+													<f:if condition="{cookieData.description}">
+														<li class="scc-cookie-description"><f:translate key="{cookieData.description}" /></li>
+													</f:if>
+												</ul>												
+											</f:for>
+										</div>
+									</f:if>
+									<f:if condition="{service.urls -> f:count()} > 0">
+										<div class="scc-list-settings scc-list-service-urls">
+											<h6><f:translate key="moreinfo.urls" /></h6>
+											<ul class="scc-list-service-urls">
+												<f:for each="{service.urls}" as="url">
+													<li>{url}</li>							
+												</f:for>
+											</ul>
+										</div>
+									</f:if>		
+								</li>							
+							</f:for>
+						</ul>
+					</f:if>
+								
+				</div>
+			</div>
+		</f:for>
+	</f:section>
+	
+	<f:section name="DatabaseSource">
+		<f:for each="{categories}" as="category">
+			<div class="form-group">
+				<div class="scc-widget--categorysettings-header">			
+					<h3>	
+						<label for="scc-widget--categorysettingskey_{category.model.uid}">{category.model.name}</label>
+						<f:if condition="{category.mandatory}">
+							<f:then>
+								<f:form.hidden name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" />
+								<f:form.checkbox id="scc-widget--categorysettingskey_{category.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" class="checkbox" checked="checked" additionalAttributes="{disabled: 'disabled'}" />
+							</f:then>
+							<f:else>
+								<f:if condition="{category.checked}">
+									<f:then>
+										<f:form.checkbox id="scc-widget--categorysettingskey_{category.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" class="checkbox" checked="checked" />
+									</f:then>
+									<f:else>
+										<f:form.checkbox id="scc-widget--categorysettingskey_{category.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categorySettingsKey][]" value="{category.model.uid}" class="checkbox" />
+									</f:else>
+								</f:if>
+							</f:else>
+						</f:if>														
+					</h3>
+				</div>			
+				<div class="scc-widget--categorysettings-content">
+					<f:if condition="{category.services -> f:count()} > 0">
+						<h4><f:translate key="moreinfo.services" /></h4>
+						<ul class="scc-list scc-list-services list-group list-group-flush">
+							<f:for each="{category.services}" as="service">
+								<li class="list-group-item">
+									<h5>
+										{service.model.name}
+										<f:if condition="{service.checked}">
+											<f:then>
+												<f:form.checkbox id="scc-widget--categorysettingskey_{category.model.uid}_{service.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categoryServiceSettingsKey][]" value="{service.model.uid}" class="checkbox" checked="checked" />
+											</f:then>
+											<f:else>
+												<f:form.checkbox id="scc-widget--categorysettingskey_{category.model.uid}_{service.model.uid}" name="tx_slavleecookiecontrol_slavleecookiecontrol[categoryServiceSettingsKey][]" value="{service.model.uid}" class="checkbox" />
+											</f:else>
+										</f:if>
+									</h5>
+									<f:if condition="{service.model.cookies -> f:count()} > 0">
+										<div class="scc-list-settings scc-list-service-cookies">
+											<h6><f:translate key="moreinfo.cookies" /></h6>
+											<f:for each="{service.model.cookies}" as="cookie" iteration="iterator">
+												<p class="mb-0{f:if(condition:'{iterator.index} > 0',then:' mt-1')}"><strong>{cookie.name}</strong></p>
+												<ul class="scc-cookie-settings">
+													<li class="scc-cookie-type"><span class="scc-label"><f:translate key="cookie.type" />:</span> <f:translate key="cookie.type.{cookie.type}" default="{cookie.type}" /></li>
+													<li class="scc-cookie-expiration">
+														<span class="scc-label"><f:translate key="cookie.expiration" />:</span> <f:translate key="cookies.session.expiration.{cookie.expirationType}" arguments="{0: '{cookie.expirationValue}'}"/>
+													</li>
+													<f:if condition="{cookie.description}">
+														<li class="scc-cookie-description"><f:translate key="{cookie.description}" /></li>
+													</f:if>
+												</ul>												
+											</f:for>
+										</div>
+									</f:if>
+									<cc:format.stringToArray string="{service.model.urls}" as="urls">
+										<f:if condition="{urls -> f:count()} > 0">
+											<div class="scc-list-settings scc-list-service-urls">
+												<h6><f:translate key="moreinfo.urls" /></h6>
+												<ul class="scc-list-service-urls">
+													<f:for each="{urls}" as="url">
+														<li>{url}</li>							
+													</f:for>
+												</ul>
+											</div>
+										</f:if>		
+									</cc:format.stringToArray>
+								</li>							
+							</f:for>
+						</ul>
+					</f:if>
+								
+				</div>
+			</div>
+		</f:for>
+	</f:section>
+</html>
