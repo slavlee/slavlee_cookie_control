@@ -1,0 +1,191 @@
+@CHARSET "UTF-8";
+
+.scc
+{
+	z-index: 1049;
+	width: 100%;
+}
+
+.scc > .alert
+{
+	margin-bottom: 0;
+}
+
+/* POSITION - START*/
+.scc-position--bottom
+{
+	position: fixed;
+	bottom: 0;
+}
+/* POSITION - END*/
+
+/* OVERLAY - START */
+.scc-overlay
+{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+	z-index: 1048;
+}
+
+.scc-overlay.scc--minify
+{
+	background: transparent; 
+	height: auto;
+}
+/* OVERLAY - END */
+/* FORM - START*/
+.scc form
+{
+	margin-top: 1rem;
+}
+
+.scc form .btn-group .form-group
+{
+	display: inline;
+	margin-bottom: 0;
+}
+/* FORM - END */
+
+/* MINIFY - START */
+.scc-minify
+{
+	opacity: 0.25;
+}
+
+.scc-minify:hover,
+.scc-minify:focus,
+.scc-minify:active
+{
+	opacity: 1;
+}
+/* MINIFY - END */ 
+
+/* BUTTONS - START */
+.btn--gotit
+{
+	margin-top: 5px;
+}
+/* BUTTONS - END */
+
+/* Categories Form - START */
+.scc-widget--catsettings
+{
+	margin-bottom: 1rem;
+}
+
+.scc-widget--catsettings .scc-widget--catsettings-title
+{
+	margin-bottom: 0.5rem;
+}
+
+.scc-widget--catsettings .form-group
+{
+	text-align: center;
+	margin-right: 0.5rem;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.scc-widget--catsettings .form-group:last-child
+{
+	margin-right: 0;
+}
+
+.scc-widget--catsettings .form-group .checkbox
+{
+	display: inline;
+}
+
+.scc-widget--catsettings .form-group label:hover,
+.scc-widget--catsettings .form-group label:focus,
+.scc-widget--catsettings .form-group label:active
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* Categories Form - END */
+
+/* MORE INFO MODAL: GENERAL - START */
+.scc-moreinfo h1,
+.scc-moreinfo h2,
+.scc-moreinfo h3,
+.scc-moreinfo h4,
+.scc-moreinfo h5,
+.scc-moreinfo h6
+{
+	font-weight: 600;	
+}
+
+.scc-moreinfo h6
+{
+	font-size: 1.15rem;
+}
+
+.scc-moreinfo .scc-widget--catsettings .form-group
+{
+	display: inherit;
+	margin-right: 0;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.scc-moreinfo .scc-widget--catsettings .form-group .checkbox
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.scc-moreinfo .scc-widget--catsettings .form-group:last-child
+{
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+	.scc-moreinfo .modal-dialog {
+	    max-width: 600px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.scc-moreinfo .modal-dialog {
+	    max-width: 800px;
+	}
+}
+/* MORE INFO MODAL: GENERAL - END */
+/* MORE INFO MODAL: SERVICES - START */
+.scc-list-services .scc-list-service-cookies + .scc-list-service-urls
+{
+	margin-top: 1rem;
+}
+
+ul.scc-list-services,
+ul.scc-list-services > li,
+ul.scc-cookie-settings,
+ul.scc-cookie-settings > li
+{
+	list-style: none;
+}
+
+ul.scc-list-services,
+ul.scc-cookie-settings
+{
+	padding: 0;
+}
+
+ul.scc-cookie-settings
+{
+	font-size: 0.95rem;
+}
+
+ul.scc-cookie-settings .scc-cookie-type,
+ul.scc-cookie-settings .scc-cookie-expiration
+{
+	font-size: 0.8rem;
+	color: #505050;
+}
+/* MORE INFO MODAL: SERVICES - END */
