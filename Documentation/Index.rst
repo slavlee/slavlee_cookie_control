@@ -29,7 +29,8 @@ Extension Name
    `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
    license
 
-{extension.description}
+This extensions shows an alert message, where users can accept to use cookies. If they are disagree, then all cookies will be deleted.
+This cookie gives you the opportunity to comply to the latest European Privacy Protection Law.
 
 **TYPO3**
 
@@ -38,7 +39,7 @@ a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
 **Community Documentation**
 
-This documentation is community documentation for the TYPO3 extension {extension.name}
+This documentation is community documentation for the TYPO3 extension slavlee_cookie_control
 
 It is maintained as part of this third party extension.
 
