@@ -7,34 +7,35 @@ For Administrators
 ===========
 
 The complete configuration is set up in TypoScript. This includes:
-* categories
-* services
-* cookies
-* urls
+- categories
+- services
+- cookies
+- urls
 
-**How Slavlee Cookie Control is embedded in your page**
-Slavlee Cookie Control has a frontend plugin that needs to be embeded on your website on every page.
-You don't need to to it manually, on default the frontend plugin set itself up on page.5.
-If you have for any reasons something on that number already in your TYPO3 installation, then you better
-move your typoscript object to another number or you can define Slavlee Cookie Control on
-a different number as well.
-If you decide to move Slavlee Cookie Control, then you have to set this:
+.. How Slavlee Cookie Control is embedded in your page::
+   
+   Slavlee Cookie Control has a frontend plugin that needs to be embeded on your website on every page.
+   You don't need to to it manually, on default the frontend plugin set itself up on page.5.
+   If you have for any reasons something on that number already in your TYPO3 installation, then you better
+   move your typoscript object to another number or you can define Slavlee Cookie Control on
+   a different number as well.
+   If you decide to move Slavlee Cookie Control, then you have to set this:
 
 .. code-block:: typoscript
 
-# Include Slavlee Cookie Control
-page.5 = USER
-page.5 {
+   # Include Slavlee Cookie Control
+   page.5 = USER
+   page.5 {
 	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-    extensionName = SlavleeCookieControl
-    pluginName = Slavleecookiecontrol
-    vendorName = Slavlee
-    controller = SlavleeCookieControl
-    action = show
-    view < plugin.tx_slavlee_cookie_control.view
-    persistence < plugin.tx_slavlee_cookie_control.persistence
-    settings < plugin.tx_slavlee_cookie_control.settings
-}
+	    extensionName = SlavleeCookieControl
+	    pluginName = Slavleecookiecontrol
+	    vendorName = Slavlee
+	    controller = SlavleeCookieControl
+	    action = show
+	    view < plugin.tx_slavlee_cookie_control.view
+	    persistence < plugin.tx_slavlee_cookie_control.persistence
+	    settings < plugin.tx_slavlee_cookie_control.settings
+   }
 
 somewhere else.
 
@@ -46,9 +47,9 @@ Every setting is below:
 
 .. code-block:: typoscript
 
-page.5.settings {
+   page.5.settings {
 	
-}
+   }
 
 Categories
 ^^^^^^^^^^
@@ -56,11 +57,11 @@ The categories are configured below
 
 .. code-block:: typoscript
 
-page.5.settings {
-	categories {
-	
-	}
-}
+ page.5.settings {
+ 	categories {
+		
+ 	}
+ }
 
 Categories is a Content Object Array (COA). A category needs to be set on a number. The default numbers
 are on
@@ -76,51 +77,25 @@ A category is structured like so:
 
 .. code-block:: typoscript
 
-page.5.settings {
+ page.5.settings {
 	categories {
 		10 {  			
-  			enable = 1
-  			mandatory = 1
-  			label = LLL:EXT:slavlee_cookie_control/Resources/Private/Language/locallang.xlf:category.necessary.label
-  			services = php
-  		}
-  	}
-}
-
-
-.. t3-field-list-table::
-	:header-rows: 1
-		- :Field:
- 				Field:
- 		  :Datatype:
- 		  		Datatype:
-		  :Description:
-				Description:
-		- :Field:
-			enable
-		  :Datatype:
-		  	boolean	
-		  :Description:
-			This is a boolean value, which triggers the appearance of this category and all assigned services.
-		- :Field:
-			mandatory
-		  :Datatype:
-		  	boolean
-		  :Description:
-		  	If enable, then this category can't be denied by the frontend user. Only recommended for essential services.
-		- :Field:
-			label
-		  :Datatype:
-		  	string
-		  :Description:
-		  	The label of this field
-		- :Field:
-			services
-		  :Datatype:
-		  	string
-		  :Description:
-		  	Comma seperated string of name of services. Each service has to exist below settings.services
-
+			enable = 1
+ 			mandatory = 1
+ 			label = LLL:EXT:slavlee_cookie_control/Resources/Private/Language/locallang.xlf:category.necessary.label
+ 			services = php
+		}
+	}
+ }
+																													
+=========== =============== =============================================================================================================
+Property    Type			    Description
+=========== =============== =============================================================================================================
+enable		boolean			This is a boolean value, which triggers the appearance of this category and all assigned services.
+mandatory	boolean			If enable, then this category can't be denied by the frontend user. Only recommended for essential services.
+label		string			The label of this field
+services	string			Comma seperated string of name of services. Each service has to exist below settings.services
+=========== =============== =============================================================================================================
 
 Services
 ^^^^^^^^^^
@@ -129,18 +104,18 @@ The services are below
 
 .. code-block:: typoscript
 
-page.5.settings {
-	services {
+ page.5.settings {
+ 	services {
 
-  	}
-}
+ 	}
+	}
 
 Services is normal TypoScript object and contains other TypoScript objects with their names as index, like:
 
 .. code-block:: typoscript
 
-page.5.settings {
-	services {
+ page.5.settings {
+ 	services {
 		php {
 			enable = 1
 			name = PHP
@@ -148,41 +123,17 @@ page.5.settings {
 			urls = 
 			cookies = PHPSESSID
 		}
-  	}
-}
+	}
+ }
 
-.. t3-field-list-table::
-	:header-rows: 1
-		- :Field:
- 				Field:
- 		  :Datatype:
- 		  		Datatype:
-		  :Description:
-				Description:
-		- :Field:
-			enable
-		  :Datatype:
-		  	boolean	
-		  :Description:
-			This is a boolean value, which triggers the appearance of this category and all assigned services.
-		- :Field:
-			description
-		  :Datatype:
-		  	string	
-		  :Description:
-			The description of the service.
-		- :Field:
-			urls
-		  :Datatype:
-		  	string	
-		  :Description:
-			Comma seperated string with urls that will be shredded in the HTML code, when this category is not accepted.
-		- :Field:
-			cookies
-		  :Datatype:
-		  	string	
-		  :Description:
-			Comma seperated string of cookie names. The cookie names needs to be configured in settings.cookies. These cookies will be deleted, when the category is not accepted.
+=========== =============== =============================================================================================================
+Property    Type			    Description
+=========== =============== =============================================================================================================
+enable		boolean			This is a boolean value, which triggers the appearance of this category and all assigned services.
+description	string			The description of the service.
+urls		string			Comma seperated string with urls that will be shredded in the HTML code, when this category is not accepted.
+cookies		string			Comma seperated string of cookie names. The cookie names needs to be configured in settings.cookies. These cookies will be deleted, when the category is not accepted.
+=========== =============== =============================================================================================================
 
 Cookies
 ^^^^^^^^^^
@@ -191,11 +142,11 @@ The cookies is a normal TypoScript object as well.
 
 .. code-block:: typoscript
 
-page.5.settings {
-	cookies {
+ page.5.settings {
+ 	cookies {
 
-  	}
-}
+	}
+ }
 
 
 It contains more TypoScript object for the cerain cookies, where the index is the name of the cookie. This looks like so:
@@ -203,8 +154,8 @@ It contains more TypoScript object for the cerain cookies, where the index is th
 
 .. code-block:: typoscript
 
-page.5.settings {
-	cookies {
+ page.5.settings {
+ 	cookies {
 		PHPSESSID {
 			description = LLL:EXT:slavlee_cookie_control/Resources/Private/Language/locallang.xlf:cookies.phpsessid
 			type = session
@@ -212,34 +163,14 @@ page.5.settings {
 				type = endofbrowser
 			}
 		}
-  	}
-}
+	}
+ }
 
-.. t3-field-list-table::
-	:header-rows: 1
-		- :Field:
- 				Field:
- 		  :Datatype:
- 		  		Datatype:
-		  :Description:
-				Description:
-		- :Field:
-			description
-		  :Datatype:
-		  	string	
-		  :Description:
-			The description of the cookie.
-		- :Field:
-			type
-		  :Datatype:
-		  	list	
-		  :Description:
-			Valid values are: session, permanent
-		- :Field:
-			expiration
-		  :Datatype:
-		  	object	
-		  :Description:
-			This object contains:
-			- "type": Valid values are: endofbrowser, minutes, hours, days, months, years
- 
+=========== =============== =============================================================================================================
+Property    Type			    Description
+=========== =============== =============================================================================================================
+description	string			The description of the cookie.
+type		list			Valid values are: session, permanent
+expiration	object			This object contains:
+							- "type": Valid values are: endofbrowser, minutes, hours, days, months, years
+=========== =============== =============================================================================================================

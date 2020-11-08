@@ -13,7 +13,7 @@ Extension Name
 =============================================================
 
 :Version:
-   |release|
+   Version 1.1.2
 
 :Language:
    en
@@ -49,7 +49,7 @@ If you find an error or something is missing, please:
 
 **Extension Manual**
 
-This documentation is for the TYPO3 extension <extkey>.
+This documentation is for the TYPO3 extension slavlee_cookie_control.
 
 **For Contributors**
 
