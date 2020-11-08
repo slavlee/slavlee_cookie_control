@@ -89,38 +89,37 @@ page.5.settings {
 
 
 .. t3-field-list-table::
-	:header-rows: 1
-		- :Field:
- 				Field:
- 		  :Datatype:
- 		  		Datatype:
-		  :Description:
-				Description:
-		- :Field:
-			enable
-		  :Datatype:
-		  	boolean	
-		  :Description:
-			This is a boolean value, which triggers the appearance of this category and all assigned services.
-		- :Field:
-			mandatory
-		  :Datatype:
-		  	boolean
-		  :Description:
-		  	If enable, then this category can't be denied by the frontend user. Only recommended for essential services.
-		- :Field:
-			label
-		  :Datatype:
-		  	string
-		  :Description:
-		  	The label of this field
-		- :Field:
-			services
-		  :Datatype:
-		  	string
-		  :Description:
-		  	Comma seperated string of name of services. Each service has to exist below settings.services
-
+ :header-rows: 1
+ - :Field:
+ 		Field:
+   :Datatype:
+ 		Datatype:
+   :Description:
+		Description:
+ - :Field:
+		enable
+   :Datatype:
+		boolean	
+   :Description:
+		This is a boolean value, which triggers the appearance of this category and all assigned services.
+ - :Field:
+		mandatory
+   :Datatype:
+		boolean
+   :Description:
+		If enable, then this category can't be denied by the frontend user. Only recommended for essential services.
+ - :Field:
+		label
+   :Datatype:
+		string
+   :Description:
+		The label of this field
+ - :Field:
+		services
+   :Datatype:
+		string
+   :Description:
+		Comma seperated string of name of services. Each service has to exist below settings.services
 
 Services
 ^^^^^^^^^^
