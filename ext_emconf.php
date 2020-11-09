@@ -21,7 +21,7 @@ This cookie gives you the opportunity to comply to the latest European Privacy P
     'uploadfolder' => false,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0 Free',
+    'version' => '1.1.9 Free',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.32-10.4.99',

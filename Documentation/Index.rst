@@ -13,7 +13,7 @@ Extension Name
 =============================================================
 
 :Version:
-   Version 1.1.2
+   Version 1.1.9 Free
 
 :Language:
    en
