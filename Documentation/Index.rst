@@ -33,12 +33,31 @@ This extensions show an alert message, where users can accept to use services. I
 To embed external services that are using cookies or tracking in any way, you Slavlee Cookie Control provides TypoScript Conditions to check whether the user has accepted to certain services or not.
 Overall, this cookie consent gives you the opportunity to comply to the latest European Privacy Protection Law.
 
-**TYPO3**
+Pro Version
+^^^^^^^^^^^
+
+Slavlee Cookie Control is also available in a pro version. The pro version has the following benefits:
+													 
+==================================================== ====================================================
+Free    											 Pro			   
+==================================================== ====================================================
+\-	 												 Everything that Free has
+Manage categories and services in TypoScript only	 Manage categories and services as content elements
+1 Layout position (bottom)							 3 Layout positions (top, bottom, center)
+\-													 Show/Hide categories in Cookie Consent			
+\-													 12 months support inclusive
+==================================================== ====================================================
+
+Slavlee Cookie Control Pro is available on `CodeCanyon <https://codecanyon.net/item/slavlee-cookie-control/21914103>`_ .
+
+TYPO3
+^^^^^
 
 The content of this document is related to TYPO3 CMS,
 a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
-**Community Documentation**
+Community Documentation
+^^^^^^^^^^^^^^^^^^^^^^^
 
 This documentation is community documentation for the TYPO3 extension Slavlee Cookie Control
 
@@ -47,11 +66,13 @@ It is maintained as part of this third party extension.
 If you find an error or something is missing, please:
 `Report a Problem <https://github.com/slavlee/slavlee_cookie_control/issues/new>`__
 
-**Extension Manual**
+Extension Manual
+^^^^^^^^^^^^^^^^
 
 This documentation is for the TYPO3 extension slavlee_cookie_control.
 
-**For Contributors**
+For Contributors
+^^^^^^^^^^^^^^^^
 
 You are welcome to help improve this guide.
 Just click on "Edit me on GitHub" on the top right to submit your change request.
