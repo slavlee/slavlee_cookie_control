@@ -63,7 +63,6 @@ Just click on "Edit me on GitHub" on the top right to submit your change request
    Installation/Index
    Editor/Index   
    Administrator/Index
-   Configuration/Index
    Developer/Index
    KnownProblems/Index
    Changelog/Index
