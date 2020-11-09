@@ -33,4 +33,5 @@ Copyleft
 --------
 
 © 2018 - 2020 Kevin Chileong Lee, [Slavlee](https://www.slavlee.de/). All Rights Reserved.
+
 Slavlee is not affiliated with or endorsed by TYPO3.
