@@ -13,7 +13,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Slavlee Cookie Control (Free Version)',
     'description' => 'This extensions shows an alert message, where users can accept to use cookies. If they are disagree, then all cookies will be deleted.
-This cookie gives you the opportunity to comply to the latest European Privacy Protection Law.',
+This cookie gives you the opportunity to comply to the latest European Privacy Protection Law. The pro version is available on https://codecanyon.net/item/slavlee-cookie-control/21914103.',
     'category' => 'plugin',
     'author' => 'Kevin Chileong Lee',
     'author_email' => 'info@slavlee.de',
@@ -21,7 +21,7 @@ This cookie gives you the opportunity to comply to the latest European Privacy P
     'uploadfolder' => false,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.1.9 Free',
+    'version' => '1.1.10 Free',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.32-10.4.99',
