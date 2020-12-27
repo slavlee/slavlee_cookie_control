@@ -45,6 +45,8 @@ Free    											 Pro
 Manage categories and services in TypoScript only	 Manage categories and services as content elements
 1 Layout position (bottom)							 3 Layout positions (top, bottom, center)
 \-													 Show/Hide categories in Cookie Consent			
+\-													 Layout, where you can switch the Cookie Consent Layout and behaviour
+\-													 Fallback Content for Vimeo and YouTube Services on denying
 \-													 12 months support inclusive
 ==================================================== ====================================================
 
