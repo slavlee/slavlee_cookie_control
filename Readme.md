@@ -28,7 +28,7 @@ Supported TYPO3 Versions
 Slavlee Cookie Control works on:
 
 - TYPO3 V8.7.x
-- TYPO3 V9.5.22
+- TYPO3 V9.5.22 and higher
 - TYPO3 V10.4.x
 
 Copyleft
