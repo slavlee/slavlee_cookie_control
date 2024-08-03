@@ -8,7 +8,7 @@
 		}
 	],
 	"require" : {
-		"typo3/cms-core" : "^8.7.1"
+		"typo3/cms-core" : "^11.5"
 	},
 	"autoload" : {
 		"psr-4" : {
